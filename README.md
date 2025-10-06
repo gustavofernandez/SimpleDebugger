@@ -55,6 +55,38 @@ sd_print(['item1', 'item2', 'item3']);
 sd_print({ error: 'Conexión fallida', codigo: 500 });
 ```
 
+### Ejemplo completo de uso
+
+```html
+   <!DOCTYPE html>
+      <html lang="es">
+      <head>
+        <meta charset="UTF-8">
+        <title>Prueba SimpleDebugger</title>
+        <script src="SimpleDebugger.php"></script>
+      </head>
+      <body>
+        <h1>Demo de SimpleDebugger</h1>
+        <button onclick="probarDebug()">Ejecutar ejemplo</button>
+      
+        <script>
+          function probarDebug() {
+            // Mensajes de distintos niveles
+            sd_print('Iniciando login de usuario...');
+            sd_print('Usuario guardado exitosamente');
+            sd_print('Warning: función deprecated detectada');
+            sd_print('Error al conectar con la base de datos');
+      
+            // Ejemplo con objetos
+            sd_print({ usuario: 'juan', accion: 'login', timestamp: new Date() });
+      
+            // Prueba de conexión con servidor
+            window.debugger.testServer();
+          }
+        </script>
+      </body>
+   </html>
+```
 ---
 
 ## 🧠 Clasificación automática de mensajes
