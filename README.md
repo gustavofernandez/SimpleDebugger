@@ -19,6 +19,10 @@ Ideal para desarrolladores que quieren **ver en vivo qué está ocurriendo tanto
 
 ---
 
+## 🖼️ Vista previa
+
+![Panel de SimpleDebugger](SimpleDebugger.png)
+
 ## ⚙️ Instalación
 
 1. Descarga la libreria
